@@ -1,0 +1,12 @@
+.welcome {
+  text-align: center;
+
+  h1 {
+    text-decoration: none;
+  }
+
+  img {
+    border-radius: 100%;
+    border: 0;
+  }
+}

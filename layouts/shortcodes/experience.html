@@ -1,0 +1,12 @@
+<div class="timeline experience">
+  {{ range .Site.Data.experience }}
+  <div class="timeline-container">
+      <div class="timeline-date">{{ .startDate }} - {{ .endDate }}</div>
+      <div class="timeline-content">
+          <p class="title">{{ .company }}</p>
+          <p class="subtitle">{{ .position }}</p>
+          <p class="content">{{ .location }}</p>
+      </div>
+  </div>
+  {{ end }}
+</div>

@@ -1,0 +1,14 @@
+.social-links {
+  p {
+    margin: 5px;
+  }
+}
+
+.navigation-menu__inner > li {
+  margin-bottom: 0;
+}
+
+.header__logo::after {
+  content: none;
+  display: none;
+}

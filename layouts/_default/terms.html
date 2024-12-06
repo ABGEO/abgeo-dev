@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="terms">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+    <div class="index-content">
+        {{ . }}
+    </div>
+    {{ end }}
+
+    <ul>
+        {{ range .Site.Taxonomies.tags.ByCount }}
+        <li>
+            <a class="terms-title" href="{{ .Page.RelPermalink }}">
+                {{ .Page.LinkTitle }} [{{ .Count }}]
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

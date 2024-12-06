@@ -1,0 +1,41 @@
+social:
+  - label: "Email"
+    url: "mailto:me@abgeo.dev"
+  - label: "GitHub"
+    url: "https://github.com/ABGEO"
+  - label: "LinkedIn"
+    url: "https://linkedin.com/in/abgeo"
+  - label: "X (Twitter)"
+    url: "https://x.com/ABGEO07"
+
+skills:
+  - Go
+  - Gin
+  - GORM
+  - Cobra
+  - GoReleaser
+  - golangci
+  - Python
+  - Flask
+  - FastAPI
+  - PHP
+  - Symfony
+  - Drupal
+  - Linux
+  - Docker
+  - Docker Compose
+  - Kubernetes
+  - Rancher
+  - AWS
+  - Terraform
+  - Ansible
+  - Grafana
+  - Hashura
+  - Jenkins
+  - RabbitMQ
+  - Kafka
+  - Redis
+  - etcd
+  - MySQL
+  - PostgreSQL
+  - MongoDB

@@ -1,0 +1,84 @@
+languageCode = 'en-us'
+title = "ABGEO's Personal website"
+copyright = 'Temuri Takalandze (ABGEO)'
+disableHugoGeneratorInject = true
+enableGitInfo = true
+enableRobotsTXT = true
+timeZone = 'Asia/Tbilisi'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  centerTheme = true
+  readMore = 'Read More'
+  newerPosts = 'Newer'
+  olderPosts = 'Older'
+  images = ['/og-image.png']
+  autoCover = true
+
+  [params.logo]
+    logoText = 'visitor@abgeo.dev:~$'
+    logoHomeLink = '/'
+  
+  [params.social]
+    twitter = 'ABGEO07'
+    facebook_app_id = '2095975467495214'
+
+[pagination]
+  pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 3
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 4
+  [[menu.main]]
+    identifier = "book"
+    name = "Book"
+    url = "/book"
+    weight = 5
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact"
+    weight = 6
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/files/cv/temuri-t-cv.pdf"
+    weight = 7
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags"
+    weight = 8
+
+[services]
+  [services.disqus]
+    shortname = 'abgeo-dev'
+  [services.googleAnalytics]
+    id = 'G-TB823JE1Y3'
+
+[taxonomies]
+  tag = 'tags'
+
+[module]
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-terminal/v4'

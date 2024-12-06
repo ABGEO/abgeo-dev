@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="copyright copyright--user">
+            <span>© {{ now.Year }} {{ $.Site.Copyright | safeHTML }}</span>
+        </div>
+    </div>
+</footer>
+
+{{ $js := slice }}
+{{ range resources.Match "js/*.js" }}
+{{ $js = $js | append (resources.Get . | js.Build) }}
+{{ end }}
+
+{{ $bundle := $js | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+
+<script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>

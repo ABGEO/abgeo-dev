@@ -1,0 +1,5 @@
+<div class="social-links">
+    {{ range .Site.Data.profile.social }}
+        <p>{{ .label }} :: <a href="{{ .url }}" target="_blank">{{ .url }}</a></p>
+    {{ end }}
+</div>

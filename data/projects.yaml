@@ -1,0 +1,277 @@
+- title: "iMatiane"
+  date: "2018-06-09"
+  cover: "cover.png"
+  url: "https://imatiane.abgeo.dev"
+  tags:
+    - "PHP"
+    - "Hackathon"
+    - "CST"
+  keywords:
+    - "PHP"
+    - "Hackathon"
+    - "CST"
+    - "Quiz"
+    - "VizHack"
+  content: |
+    Historical quiz created for VizHack.
+
+    <!--more-->
+
+    The project for [VizHack](https://vizhack.ge/) created by students of the Caucasus School of Technology.
+
+- title: "Informatics.Ge"
+  date: "2018-11-15"
+  cover: "cover.png"
+  url: "https://informatics.ge"
+  tags:
+    - "PHP"
+    - "Informatics"
+  keywords:
+    - "PHP"
+    - "Informatics"
+    - "Contest"
+    - "Competitive Programming"
+  content: |
+    Informatics.Ge - Website to learn programming and competitive programming.
+
+    <!--more-->
+
+    This is a platform, which will help beginner programmers to acquire future profession,
+    and improve skills of experienced ones.
+
+- title: "Cherry Framework"
+  date: "2019-02-27"
+  cover: "cover.png"
+  url: "https://github.com/cherry-framework"
+  tags:
+    - "PHP"
+  keywords:
+    - "PHP"
+    - "Framework"
+  content: |
+    My simple PHP micro framework.
+
+- title: "docker4symfony"
+  date: "2019-05-23"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/docker4symfony"
+  tags:
+    - "Docker"
+    - "Symfony"
+    - "PHP"
+  keywords:
+    - "Docker"
+    - "Symfony"
+    - "PHP"
+  content: |
+    My Docker stack for Symfony projects.
+
+- title: "nbg-currency"
+  date: "2019-07-16"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/nbg-currency"
+  tags:
+    - "PHP"
+    - "Library"
+  keywords:
+    - "PHP"
+    - "Library"
+    - "NBG"
+    - "API"
+  content: |
+    PHP Library for getting data from National Bank of Georgia (NBG)'s API.
+
+- title: "gen-html"
+  date: "2019-07-23"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/gen-html"
+  tags:
+    - "PHP"
+    - "Library"
+  keywords:
+    - "PHP"
+    - "Library"
+    - "HTML"
+  content: |
+    PHP Library for generating HTML document.
+
+- title: "nbg-currency-d8"
+  date: "2019-08-17"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/nbg-currency-d8"
+  tags:
+    - "PHP"
+    - "Drupal"
+  keywords:
+    - "PHP"
+    - "Drupal"
+    - "NBG"
+  content: |
+    Drupal 8 module for working with NBG Currency API.
+
+- title: "gen-md"
+  date: "2019-08-29"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/gen-md"
+  tags:
+    - "PHP"
+    - "Library"
+  keywords:
+    - "PHP"
+    - "Library"
+    - "Markdown"
+  content: |
+    PHP Library for generating Markdown document.
+
+- title: "covid19-cli"
+  date: "2020-04-05"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/covid19-cli"
+  tags:
+    - "PHP"
+    - "CLI"
+  keywords:
+    - "PHP"
+    - "CLI"
+    - "COVID-19"
+  content: |
+    Simple CLI tool for displaying COVID-19 statistics.
+
+- title: "Stalin's List Website"
+  date: "2020-04-25"
+  cover: "cover.png"
+  url: "https://stalin.abgeo.dev"
+  tags:
+    - "PHP"
+    - "Symfony"
+    - "Website"
+  keywords:
+    - "PHP"
+    - "Symfony"
+    - "Website"
+    - "Stalin"
+  content: |
+    Website for the presentation of the "Stalin's list"
+
+    <!--more-->
+
+    > Stalin's shooting lists were the lists of extrajudicially accused persons submitted to the Military Collegium of the Supreme Court of the USSR after the endorsement by Joseph Stalin and other members of the Politburo, for issuing a verdict, typically execution by shooting, either by an individual or a firing squad.<br>
+    > — <cite>Wikipedia</cite>
+
+    On this site you can see a people affected by Stalin's List. The website is Open Source and contributions are welcome.
+
+- title: "JSON to POPO"
+  date: "2020-04-29"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/json-to-popo"
+  tags:
+    - "PHP"
+    - "Library"
+  keywords:
+    - "PHP"
+    - "Library"
+    - "JSON"
+    - "POPO"
+  content: |
+    My PHP library to fill Plain Old PHP Object with JSON content.
+
+- title: "XML to JSON"
+  date: "2020-05-10"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/xml-to-json"
+  tags:
+    - "PHP"
+    - "Library"
+  keywords:
+    - "PHP"
+    - "Library"
+    - "JSON"
+    - "XML"
+  content: |
+    Simple way to convert XML to JSON.
+
+    <!--more-->
+
+    This package gives you the ability to convert XML string/file to JSON string/file.
+
+- title: "goclockify"
+  date: "2020-07-13"
+  cover: "cover.gif"
+  url: "https://github.com/ABGEO/goclockify"
+  tags:
+    - "Go"
+    - "CLI"
+  keywords:
+    - "Go"
+    - "CLI"
+    - "Clockify"
+  content: |
+    A terminal-based client for Clockify time tracker
+
+- title: "nomrebi-web"
+  date: "2021-02-27"
+  cover: "cover.png"
+  url: "https://nomrebi.abgeo.dev"
+  tags:
+    - "Website"
+  keywords:
+    - "Website"
+    - "Nomrebi"
+  content: |
+    Get information about phone numbers stored in the Nomrebi.com database
+
+- title: "vaccination.py"
+  date: "2021-09-01"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/vaccination-py"
+  tags:
+    - "CLI"
+    - "Python"
+  keywords:
+    - "CLI"
+    - "Python"
+    - "COVID-19"
+  content: |
+    Get COVID-19 vaccination schedules from booking.moh.gov.ge in the CLI.
+
+- title: "httpinfo"
+  date: "2022-03-05"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/httpinfo"
+  tags:
+    - "CLI"
+    - "Shell"
+    - "HTTP"
+  keywords:
+    - "CLI"
+    - "Shell"
+    - "HTTP"
+  content: |
+    Display information about HTTP status codes.
+
+    <!--more-->
+
+    **Written in Abkhazia, Georgia.**
+
+- title: "MailTM CLI"
+  date: "2022-09-25"
+  cover: "cover.gif"
+  url: "https://github.com/ABGEO/mailtm"
+  tags:
+    - "Go"
+    - "CLI"
+  keywords:
+    - "Go"
+    - "CLI"
+    - "MailTM"
+    - "Disposable Email"
+  content: |
+    Here's my latest Go project - Mail.tm CLI, a CLI application for working with Mail.tm's disposable email service.
+
+    <!--more-->
+
+    Disposable email - is a free email service that allows receiving emails at a temporary address that self-destructs after a specific time elapses.
+
+    Mail.tm CLI is a command-line-based application that works with one such service - Mail.tm. Mail.tm CLI allows you to manage a disposable #mailbox and receive emails from the CLI #console.
+
+    Stars, issues, and Pull Requests are welcome!

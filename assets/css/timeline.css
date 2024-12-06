@@ -1,0 +1,92 @@
+.timeline {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: var(--foreground);
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    margin-left: -1px;
+  }
+
+  .timeline-container {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    width: 70%;
+    left: 30%;
+
+    p.title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p.subtitle {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    p.content {
+      font-size: 14px;
+      margin: 0;
+      margin-top: 5px;
+    }
+  }
+
+  .timeline-date {
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    left: -170px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+    position: relative;
+    background: color-mix(in srgb, var(--foreground) 5%, transparent);
+    color: var(--foreground);
+    border-radius: var(--radius);
+    border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
+  }
+
+  .timeline-container::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -8px;
+    background-color: var(--foreground);
+    border: 3px solid var(--background);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .timeline-container::after {
+    left: -8px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .timeline-date {
+      position: static;
+      left: 0px;
+    }
+
+    &::after {
+      left: 10%;
+    }
+
+    .timeline-content {
+      margin-top: 10px;
+    }
+
+    .timeline-container {
+      width: 90%;
+      left: 10%;
+    }
+  }
+}
