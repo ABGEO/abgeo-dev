@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.Language }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #efecec;
+            --foreground: #18795b;
+            --contrast: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            font-size: 0.9rem;
+        }
+
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin: 1rem 0 1rem 0;
+            padding-top: 1rem;
+            color: var(--foreground);
+
+            &:not(:first-child) {
+                border-top: 2px solid #eee;
+            }
+        }
+
+        a {
+            color: var(--foreground);
+
+            &:hover {
+                color: var(--foreground);
+            }
+
+            &:active {
+                color: var(--foreground);
+            }
+
+            &:visited {
+                color: var(--foreground);
+            }
+
+            &:focus {
+                color: var(--foreground);
+            }
+        }
+
+        p {
+            margin-bottom: .5rem;
+        }
+
+        ul {
+            margin: .5rem 1rem;
+            list-style-type: none;
+
+            li:before {
+                content: "—";
+                color: var(--foreground);
+                font-size: 1.2em;
+                padding-right: .5rem;
+            }
+        }
+
+        .contact {
+            color: var(--contrast);
+        }
+
+        .timeline-container {
+            margin-bottom: 1.5rem;
+
+            .timeline-date {
+                float: right;
+                color: var(--contrast);
+            }
+
+            .timeline-content {
+                .title {
+                    font-weight: bold;
+                }
+
+                .subtitle {
+                    color: var(--contrast);
+                }
+            }
+        }
+
+        .dot-prefix:before {
+            width: .3rem;
+            height: .3rem;
+            border-radius: 50%;
+            margin: 0 .3rem 0.13rem .2rem;
+            background: var(--foreground);
+            display: inline-block;
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>{{ .Site.Data.profile.cv.name }}</h1>
+        <div class="contact">
+            <div class="contact-info">
+                <span>{{ .Site.Data.profile.cv.email }}</span>
+                <span class="dot-prefix">{{ .Site.Data.profile.cv.phone }}</span>
+                <span class="dot-prefix">{{ .Site.Data.profile.cv.address }}</span>
+            </div>
+
+            <div class="links">
+                {{ range $idx, $link := (where .Site.Data.profile.social "includeInCV" true) }}
+                <span class="{{ if not (eq $idx 0) }}dot-prefix{{ end }}"><a href="{{ $link.url }}">{{ $link.label
+                        }}</a></span>
+                {{ end }}
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {{ .Content }}
+    </main>
+</body>
+
+</html>

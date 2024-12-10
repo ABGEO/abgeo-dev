@@ -30,3 +30,7 @@ Driven by innovation and collaboration, I am committed to delivering impactful s
 ## Education
 
 {{< education >}}
+
+## Awards
+
+{{< awards >}}
