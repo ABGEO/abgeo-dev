@@ -1,41 +1,85 @@
+cv:
+  name: "Temuri T."
+  email: "takalandzet@gmail.com"
+  phone: "(+995) 599 134 727"
+  address: "Tbilisi, Georgia"
+
 social:
   - label: "Email"
     url: "mailto:me@abgeo.dev"
+    includeInAbout: true
+    includeInCV: false
+  - label: "ABGEO.dev"
+    url: "https://abgeo.dev"
+    includeInAbout: false
+    includeInCV: true
   - label: "GitHub"
     url: "https://github.com/ABGEO"
+    includeInAbout: true
+    includeInCV: true
   - label: "LinkedIn"
     url: "https://linkedin.com/in/abgeo"
+    includeInAbout: true
+    includeInCV: true
   - label: "X (Twitter)"
     url: "https://x.com/ABGEO07"
+    includeInAbout: true
+    includeInCV: true
 
 skills:
-  - Go
-  - Gin
-  - GORM
-  - Cobra
-  - GoReleaser
-  - golangci
-  - Python
-  - Flask
-  - FastAPI
-  - PHP
-  - Symfony
-  - Drupal
-  - Linux
-  - Docker
-  - Docker Compose
-  - Kubernetes
-  - Rancher
-  - AWS
-  - Terraform
-  - Ansible
-  - Grafana
-  - Hashura
-  - Jenkins
-  - RabbitMQ
-  - Kafka
-  - Redis
-  - etcd
-  - MySQL
-  - PostgreSQL
-  - MongoDB
+  - name: Go
+    includeInCV: true
+  - name: Gin
+    includeInCV: true
+  - name: GORM
+    includeInCV: true
+  - name: Cobra
+    includeInCV: true
+  - name: GoReleaser
+  - name: golangci
+  - name: Python
+    includeInCV: true
+  - name: Flask
+    includeInCV: true
+  - name: FastAPI
+    includeInCV: true
+  - name: PHP
+    includeInCV: true
+  - name: Symfony
+    includeInCV: true
+  - name: Drupal
+    includeInCV: true
+  - name: Linux
+  - name: Docker
+  - name: Docker Compose
+  - name: Kubernetes
+    includeInCV: true
+  - name: Rancher
+  - name: AWS
+    includeInCV: true
+  - name: Terraform
+    includeInCV: true
+  - name: Ansible
+    includeInCV: true
+  - name: Grafana
+    includeInCV: true
+  - name: Hashura
+    includeInCV: true
+  - name: Jenkins
+    includeInCV: true
+  - name: RabbitMQ
+    includeInCV: true
+  - name: Kafka
+    includeInCV: true
+  - name: Redis
+    includeInCV: true
+  - name: etcd
+  - name: MySQL
+    includeInCV: true
+  - name: PostgreSQL
+    includeInCV: true
+  - name: MongoDB
+    includeInCV: true
+
+awards:
+  - "PHP Innovation Award - August 2020 Winner"

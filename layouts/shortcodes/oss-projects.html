@@ -1,0 +1,5 @@
+<ul class="projects">
+    {{ range sort (where .Site.Data.projects "includeInCV" true) "date" "desc" }}
+    <li>{{ .title }} (<a href="{{ .url }}">{{ .url }}</a>)</li>
+    {{ end }}
+</ul>

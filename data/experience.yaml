@@ -3,45 +3,83 @@
   endDate: "Present"
   position: "Software & DevOps Engineer"
   location: "Tbilisi, Georgia"
+  includeInCV: true
+  responsibilities: |
+    - Built scalable SaaS platforms, including CRM and ERP
+    - Led teams, coaching, mentoring, and recruiting talent
+    - Managed collaboration to launch innovative products and services
+    - Organized tech talks and blogs for knowledge sharing
+    - Designed SaaS solutions tailored to customer needs
 
 - company: "Scilife"
   startDate: "12/2024"
   endDate: "Present"
   position: "Software & DevOps Engineer"
   location: "Germany, Remote"
+  includeInCV: true
 
 - company: "Vitality Group Inc."
   startDate: "03/2023"
   endDate: "11/2024"
   position: "DevOps Engineer"
   location: "USA, Remote"
+  includeInCV: true
+  responsibilities: |
+    - Created Helm charts for microservices deployment in Kubernetes
+    - Deployed resilient clusters for PostgreSQL, Redis, Kafka, RabbitMQ
+    - Automated CI/CD pipelines using Jenkins and Helm
+    - Built monitoring with ELK, OpenTelemetry, and Grafana
+    - Implemented Kubernetes autoscaling with HPA and VPA
 
 - company: "dintegra"
   startDate: "02/2022"
   endDate: "06/2022"
   position: "Software & DevOps Engineer"
   location: "Germany, Remote"
+  includeInCV: true
+  responsibilities: |
+    - Designed and implemented a Production k8s-based infrastructure
+    - Designed and implemented the On-premise infrastructure
+    - Developed the message-based multitenant management application
+    - Implemented the monitoring system
 
 - company: "Scientific Cyber Security Association"
   startDate: "06/2021"
   endDate: "07/2021"
   position: "Course Lecturer"
   location: "Tbilisi, Georgia"
+  includeInCV: false
+  responsibilities: |
+    - Delivered engaging PHP lectures, fostering practical skills and problem-solving abilities
 
 - company: "NATIX"
   startDate: "04/2021"
   endDate: "07/2021"
   position: "DevOps Engineer"
   location: "Germany, Remote"
+  includeInCV: false
+  responsibilities: |
+    - Automated client device deployment for consistent configurations and minimal downtime
+    - Monitored infrastructure proactively to prevent user-impacting issues
+    - Diagnosed and resolved complex issues with cross-functional team collaboration
+    - Communicated infrastructure health, risks, and solutions to stakeholders clearly
 
 - company: "PRI"
   startDate: "06/2020"
   endDate: "08/2020"
   position: "Software Engineer"
   location: "United States, Remote"
+  includeInCV: true
+  responsibilities: |
+    - Development and Maintenance of Drupal websites
+    - Continuous Integration & Deployment
+    - Automatic testing with Behat
 
 - company: "Scientific Cyber Security Association"
   startDate: "06/2020"
   endDate: "07/2020"
   position: "Guest Lecturer"
   location: "Tbilisi, Georgia"
+  includeInCV: false
+  responsibilities: |
+    - Delivered engaging PHP lectures, fostering practical skills and problem-solving abilities

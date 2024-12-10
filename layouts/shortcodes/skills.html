@@ -1,3 +1,16 @@
+{{ $data := .Site.Data.profile.skills }}
+
+{{ with .Get "destination" }}
+{{ if eq . "cv" }}
+{{ $data = where $data "includeInCV" true }}
+{{ end }}
+{{ end }}
+
 <div class="skills">
-    <p>{{ delimit .Site.Data.profile.skills ", " }}</p>
+  <p>
+    {{ $skills := $data }}
+    {{ range $index, $skill := $skills }}
+    {{ $skill.name }}{{ if lt $index (sub (len $skills) 1) }}, {{ end }}
+    {{ end }}
+  </p>
 </div>

@@ -1,12 +1,13 @@
 <div class="timeline education">
   {{ range .Site.Data.education }}
   <div class="timeline-container">
-      <div class="timeline-date">{{ .startDate }} - {{ .endDate }}</div>
-      <div class="timeline-content">
-          <p class="title">{{ .institution }}</p>
-          <p class="subtitle">{{ .degree }}</p>
-          <p class="content">{{ .location }}</p>
+    <span class="timeline-date">{{ .startDate }} - {{ .endDate }}</span>
+    <div class="timeline-content">
+      <div class="title">{{ .degree }}</div>
+      <div class="subtitle">
+        <span>{{ .institution }}</span> <span class="dot-prefix">{{ .location }}</span>
       </div>
+    </div>
   </div>
   {{ end }}
 </div>

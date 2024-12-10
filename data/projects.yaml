@@ -2,6 +2,7 @@
   date: "2018-06-09"
   cover: "cover.png"
   url: "https://imatiane.abgeo.dev"
+  includeInCV: false
   tags:
     - "PHP"
     - "Hackathon"
@@ -23,6 +24,7 @@
   date: "2018-11-15"
   cover: "cover.png"
   url: "https://informatics.ge"
+  includeInCV: false
   tags:
     - "PHP"
     - "Informatics"
@@ -43,6 +45,7 @@
   date: "2019-02-27"
   cover: "cover.png"
   url: "https://github.com/cherry-framework"
+  includeInCV: false
   tags:
     - "PHP"
   keywords:
@@ -55,6 +58,7 @@
   date: "2019-05-23"
   cover: "cover.png"
   url: "https://github.com/ABGEO/docker4symfony"
+  includeInCV: true
   tags:
     - "Docker"
     - "Symfony"
@@ -70,6 +74,7 @@
   date: "2019-07-16"
   cover: "cover.png"
   url: "https://github.com/ABGEO/nbg-currency"
+  includeInCV: false
   tags:
     - "PHP"
     - "Library"
@@ -85,6 +90,7 @@
   date: "2019-07-23"
   cover: "cover.png"
   url: "https://github.com/ABGEO/gen-html"
+  includeInCV: false
   tags:
     - "PHP"
     - "Library"
@@ -99,6 +105,7 @@
   date: "2019-08-17"
   cover: "cover.png"
   url: "https://github.com/ABGEO/nbg-currency-d8"
+  includeInCV: true
   tags:
     - "PHP"
     - "Drupal"
@@ -113,6 +120,7 @@
   date: "2019-08-29"
   cover: "cover.png"
   url: "https://github.com/ABGEO/gen-md"
+  includeInCV: true
   tags:
     - "PHP"
     - "Library"
@@ -127,6 +135,7 @@
   date: "2020-04-05"
   cover: "cover.png"
   url: "https://github.com/ABGEO/covid19-cli"
+  includeInCV: false
   tags:
     - "PHP"
     - "CLI"
@@ -164,6 +173,7 @@
   date: "2020-04-29"
   cover: "cover.png"
   url: "https://github.com/ABGEO/json-to-popo"
+  includeInCV: true
   tags:
     - "PHP"
     - "Library"
@@ -179,6 +189,7 @@
   date: "2020-05-10"
   cover: "cover.png"
   url: "https://github.com/ABGEO/xml-to-json"
+  includeInCV: false
   tags:
     - "PHP"
     - "Library"
@@ -198,6 +209,7 @@
   date: "2020-07-13"
   cover: "cover.gif"
   url: "https://github.com/ABGEO/goclockify"
+  includeInCV: true
   tags:
     - "Go"
     - "CLI"
@@ -212,6 +224,7 @@
   date: "2021-02-27"
   cover: "cover.png"
   url: "https://nomrebi.abgeo.dev"
+  includeInCV: false
   tags:
     - "Website"
   keywords:
@@ -224,6 +237,7 @@
   date: "2021-09-01"
   cover: "cover.png"
   url: "https://github.com/ABGEO/vaccination-py"
+  includeInCV: false
   tags:
     - "CLI"
     - "Python"
@@ -238,6 +252,7 @@
   date: "2022-03-05"
   cover: "cover.png"
   url: "https://github.com/ABGEO/httpinfo"
+  includeInCV: true
   tags:
     - "CLI"
     - "Shell"
@@ -257,6 +272,7 @@
   date: "2022-09-25"
   cover: "cover.gif"
   url: "https://github.com/ABGEO/mailtm"
+  includeInCV: true
   tags:
     - "Go"
     - "CLI"
@@ -275,3 +291,19 @@
     Mail.tm CLI is a command-line-based application that works with one such service - Mail.tm. Mail.tm CLI allows you to manage a disposable #mailbox and receive emails from the CLI #console.
 
     Stars, issues, and Pull Requests are welcome!
+
+- title: "dupman"
+  date: "2022-02-09"
+  cover: ""
+  url: "https://github.com/dupmanio"
+  includeInCV: true
+  tags:
+    - "Go"
+    - "Drupal"
+    - "Microservices"
+  keywords:
+    - "Go"
+    - "Drupal"
+    - "Microservices"
+  content: |
+    Manage multiple Drupal instance updates just in one place
