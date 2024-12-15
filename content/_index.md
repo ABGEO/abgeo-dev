@@ -11,7 +11,7 @@ framed = true
 
 I'm **Temuri Takalandze** (aka **ABGEO**), a passionate Software Engineer dedicated to building innovative and efficient solutions.
 
-Explore my journey on the [About](/about) page, discover my [Working Experience](/about/#working-experience), dive into my [Projects](/projects), and read my latest thoughts on the [Blog](/blog).
+Explore my journey on the [About](/about) page, dive into my [Projects](/projects), and read my latest thoughts on the [Blog](/blog).
 
 [**Let's create something amazing together!**](/book)
 {{% /div %}}

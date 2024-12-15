@@ -12,11 +12,15 @@
     - Designed SaaS solutions tailored to customer needs
 
 - company: "Scilife"
-  startDate: "12/2024"
+  startDate: "10/2024"
   endDate: "Present"
   position: "Software & DevOps Engineer"
   location: "Germany, Remote"
   includeInCV: true
+  responsibilities: |
+    - Designed scalable architectures for PHP, Golang and Nuxt.js services
+    - Automated deployments with GitOps, ArgoCD, and Terraform
+    - Optimized Kubernetes clusters with HPA, VPA, and custom resources
 
 - company: "Vitality Group Inc."
   startDate: "03/2023"

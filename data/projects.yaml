@@ -120,7 +120,7 @@
   date: "2019-08-29"
   cover: "cover.png"
   url: "https://github.com/ABGEO/gen-md"
-  includeInCV: true
+  includeInCV: false
   tags:
     - "PHP"
     - "Library"

@@ -23,7 +23,3 @@ Temuri T. is a versatile Software Engineer with expertise in back-end developmen
 ## Open Source
 
 {{< oss-projects >}}
-
-## Awards
-
-{{< awards >}}
