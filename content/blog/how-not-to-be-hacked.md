@@ -7,7 +7,6 @@ keywords = ["Security", "Password", "Password Manager"]
 description = ""
 showFullContent = false
 readingTime = true
-hideComments = false
 +++
 
 We live in a world where almost everything is digital. To manage the digital world, we need digital accounts. It can be an online bank account, an online wallet or even a Facebook profile. When it comes to online systems, we need to pay close attention to its security and safety, but no matter how secure the system is, its weak point will always be the user.

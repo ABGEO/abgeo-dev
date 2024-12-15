@@ -8,7 +8,6 @@ keywords = ["Hello", "First Blog"]
 description = ""
 showFullContent = false
 readingTime = true
-hideComments = false
 +++
 
 Hallo, it's my first blog on my website :)

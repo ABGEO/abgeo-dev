@@ -53,10 +53,7 @@
     {{- end -}}
   </div>
 
-  {{ if eq .Type $.Site.Params.contentTypeName }}
   {{ partial "posts_pagination.html" . }}
-  {{ end }}
-
   {{ partial "comments.html" . }}
 </article>
 {{ end }}

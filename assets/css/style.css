@@ -22,3 +22,7 @@
   display: inline-block;
   content: "";
 }
+
+.comments {
+  margin-top: 50px;
+}

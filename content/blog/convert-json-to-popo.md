@@ -7,7 +7,6 @@ keywords = []
 description = ""
 showFullContent = false
 readingTime = true
-hideComments = false
 +++
 
 Consider that you have `example.json` with the following content:
