@@ -65,6 +65,8 @@ timeZone = 'Asia/Tbilisi'
     name = "CV"
     url = "/files/cv/temuri-t-cv.pdf"
     weight = 7
+    [menu.main.params]
+      newTab = true
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
