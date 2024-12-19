@@ -10,3 +10,18 @@
     border: 0;
   }
 }
+
+.latest-content {
+  display: flex;
+  gap: 40px;
+
+  div {
+    flex: 1;
+  }
+
+  @media only screen and (max-width: 684px) {
+    & {
+      flex-direction: column;
+    }
+  }
+}

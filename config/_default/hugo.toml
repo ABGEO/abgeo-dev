@@ -17,6 +17,7 @@ timeZone = 'Asia/Tbilisi'
   readOtherPosts = 'See also'
   images = ['/og-image.png']
   autoCover = true
+  latestContentSize = 5
 
   [params.logo]
     logoText = 'visitor@abgeo.dev:~$'
