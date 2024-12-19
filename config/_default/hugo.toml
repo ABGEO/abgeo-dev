@@ -75,8 +75,6 @@ timeZone = 'Asia/Tbilisi'
     weight = 8
 
 [services]
-  [services.disqus]
-    shortname = 'abgeo-dev'
   [services.googleAnalytics]
     id = 'G-TB823JE1Y3'
 
