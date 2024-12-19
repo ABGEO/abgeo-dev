@@ -1,6 +1,5 @@
 +++
 keywords = ["Temuri Takalandze", "ABGEO", "Software Engineer", "Software Development"]
-framed = true
 +++
 
 {{% div class="welcome" %}}

@@ -11,9 +11,24 @@
   }
 }
 
+.index-section {
+  margin-top: 20px;
+
+  ul {
+    list-style: none;
+
+    li:not(:empty)::before {
+      content: "-";
+      position: absolute;
+      left: -20px;
+      color: var(--accent);
+    }
+  }
+}
+
 .latest-content {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 
   div {
     flex: 1;
@@ -23,5 +38,21 @@
     & {
       flex-direction: column;
     }
+  }
+}
+
+.spotify-widget {
+  img {
+    border: none;
+    margin: auto;
+  }
+}
+
+.quote {
+  margin: auto;
+
+  p {
+    word-break: break-word;
+    color: var(--accent);
   }
 }
