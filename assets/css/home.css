@@ -48,8 +48,8 @@
   }
 }
 
-.quote {
-  margin: auto;
+.hash {
+  text-align: center;
 
   p {
     word-break: break-word;
