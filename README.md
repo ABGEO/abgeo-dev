@@ -45,3 +45,8 @@ weasyprint public/cv/index.html cv.pdf
 ```
 
 This will generate the CV PDF file in the current directory.
+
+## License
+
+Copyright (c) 2024 [Temuri Takalandze](https://www.abgeo.dev).  
+Released under the [MIT](LICENSE) license.
