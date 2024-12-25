@@ -1,7 +1,7 @@
 code[class*=language-], pre[class*=language-] {
-    color: color-mix(in srgb,var(--foreground) 50%,transparent)!important;
+    color: color-mix(in srgb,var(--foreground) 80%,transparent)!important;
 }
 
 .token.comment, .token.prolog, .token.doctype, .token.cdata {
-    color: color-mix(in srgb,var(--foreground) 50%,transparent)!important;
+    color: color-mix(in srgb,var(--foreground) 80%,transparent)!important;
 }
