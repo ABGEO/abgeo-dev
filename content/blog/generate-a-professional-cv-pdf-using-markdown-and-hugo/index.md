@@ -19,9 +19,9 @@ Recently, I updated my personal website and rebuilt it using [Hugo](https://gohu
 
 > Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
 
-My website includes various sections such as About, Work Experience, Projects, and more. However, this blog focuses specifically on the CV section — a PDF file containing a summary of my work experience, education, skills, projects, and more. Essentially, the CV is duplicated content from my website.
+My website includes various sections such as About, Work Experience, Projects, and more. However, this blog focuses specifically on the CV section - a PDF file containing a summary of my work experience, education, skills, projects, and more. Essentially, the CV is duplicated content from my website.
 
-Maintaining two separate sources for my website and the CV seemed inefficient, so I considered generating the CV directly from my Hugo content. After some research, I discovered that Hugo does not natively support generating PDF files. But don’t worry — this story has a happy ending! I found a workaround to solve my problem.
+Maintaining two separate sources for my website and the CV seemed inefficient, so I considered generating the CV directly from my Hugo content. After some research, I discovered that Hugo does not natively support generating PDF files. But don’t worry - this story has a happy ending! I found a workaround to solve my problem.
 
 <!--more-->
 
@@ -79,7 +79,7 @@ With all the steps mentioned above, I now have a functional `/cv` page on my web
 
 ## CV Layout
 
-The `/cv` page is currently a regular website page with the site’s header, footer, and overall styling. While my website is minimalistic thanks to the [Terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/) theme — and this layout could work for the CV — your website might have a more complex design. A CV should be clean, minimalistic, and highly readable.
+The `/cv` page is currently a regular website page with the site’s header, footer, and overall styling. While my website is minimalistic thanks to the [Terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/) theme - and this layout could work for the CV - your website might have a more complex design. A CV should be clean, minimalistic, and highly readable.
 
 To achieve this, I created a separate layout specifically for the CV, stripping unnecessary elements like the header and footer and applying minimal styling. Here’s what my `layouts/_default/cv.html` file looks like:
 
@@ -112,14 +112,14 @@ To achieve this, I created a separate layout specifically for the CV, stripping 
 </html>
 ```
 
-This gave me a clean and professional - looking CV page:
+This gave me a clean and professional-looking CV page:
 
 {{< figure src="/blog/generate-a-professional-cv-pdf-using-markdown-and-hugo/images/cv-in-own-layout.png" alt="CV in own Layout" position="center" caption="CV in own Layout" captionPosition="center" >}}
 
 I can even directly share the link to my CV, such as <a href="https://abgeo.dev/cv" target="_blank">abgeo.dev/cv</a>, with recipients. However, an HTML page isn’t the most practical format for sharing a CV, especially in professional settings.
 
 
-We still need to convert it to a more universally accepted format, like PDF. Stay tuned — we’re almost there!
+We still need to convert it to a more universally accepted format, like PDF. Stay tuned - we’re almost there!
 
 ## Converting CV to PDF
 
