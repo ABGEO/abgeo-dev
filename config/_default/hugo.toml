@@ -66,17 +66,10 @@ timeZone = 'Asia/Tbilisi'
     url = "/contact"
     weight = 6
   [[menu.main]]
-    identifier = "cv"
-    name = "CV"
-    url = "/files/cv/temuri-t-cv.pdf"
-    weight = 7
-    [menu.main.params]
-      newTab = true
-  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags"
-    weight = 8
+    weight = 7
 
 [services]
   [services.googleAnalytics]
