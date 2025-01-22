@@ -25,7 +25,6 @@ timeZone = 'Asia/Tbilisi'
   
   [params.social]
     twitter = 'ABGEO07'
-    facebook_app_id = '2095975467495214'
 
   [params.tools]
     facebook_pixel_id = '920682743603564'
