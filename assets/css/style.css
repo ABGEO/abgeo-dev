@@ -24,3 +24,7 @@
 .comments {
   margin-top: 50px;
 }
+
+li > p {
+  margin: calc(var(--line-height) * 0.5) 0;
+}
