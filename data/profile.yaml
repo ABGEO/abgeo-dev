@@ -25,6 +25,10 @@ social:
     url: "https://x.com/ABGEO07"
     includeInAbout: true
     includeInCV: true
+  - label: "Facebook"
+    url: "https://facebook.com/ABGEO.dev"
+    includeInAbout: true
+    includeInCV: false
 
 skills:
   - name: Go
