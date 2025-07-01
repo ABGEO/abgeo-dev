@@ -307,3 +307,21 @@
     - "Microservices"
   content: |
     Manage multiple Drupal instance updates just in one place
+
+- title: UBill SDK Generator
+  date: "2025-06-02"
+  cover: ""
+  url: "https://github.com/ubill-ge/sdk-generator"
+  includeInCV: true
+  tags:
+    - "SDK"
+    - "OpenAPI"
+    - "Automation"
+  keywords:
+    - "SDK"
+    - "OpenAPI"
+    - "Automation"
+  content: |
+    A fully automated system for generating SDKs from the UBill API. It builds, tests,
+    and releases SDKs for multiple languages like PHP, Go, and JavaScript/TypeScript — with zero manual steps.
+    This project powers open-source developer tooling for UBill, a Georgian billing and SMS platform.
