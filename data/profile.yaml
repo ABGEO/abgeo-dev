@@ -33,25 +33,31 @@ social:
 skills:
   - name: Go
     includeInCV: true
-  - name: Gin
-    includeInCV: true
-  - name: GORM
-    includeInCV: true
-  - name: Cobra
-    includeInCV: true
-  - name: GoReleaser
-  - name: golangci
   - name: Python
     includeInCV: true
   - name: Flask
-    includeInCV: true
   - name: FastAPI
-    includeInCV: true
   - name: PHP
     includeInCV: true
   - name: Symfony
     includeInCV: true
   - name: Drupal
+    includeInCV: true
+  - name: gRPC
+    includeInCV: true
+  - name: Domain-Driven Design
+    includeInCV: true
+  - name: Event-Driven Architecture
+    includeInCV: true
+  - name: OpenTelemetry
+    includeInCV: true
+  - name: Vault
+    includeInCV: true
+  - name: OpenAPI Generator
+    includeInCV: true
+  - name: SDK generation
+    includeInCV: true
+  - name: GitOps
     includeInCV: true
   - name: Linux
   - name: Docker
@@ -59,6 +65,7 @@ skills:
   - name: Kubernetes
     includeInCV: true
   - name: Rancher
+  - name: k3s
   - name: AWS
     includeInCV: true
   - name: Terraform
