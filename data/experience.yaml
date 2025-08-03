@@ -15,9 +15,10 @@
   startDate: "10/2024"
   endDate: "Present"
   position: "Software & DevOps Engineer"
-  location: "Germany, Remote"
+  location: "Spain, Remote"
   includeInCV: true
   responsibilities: |
+    - Migrating legacy monolithic SaaS to microservices architecture
     - Designed scalable architectures for PHP, Golang and Nuxt.js services
     - Automated deployments with GitOps, ArgoCD, and Terraform
     - Optimized Kubernetes clusters with HPA, VPA, and custom resources
