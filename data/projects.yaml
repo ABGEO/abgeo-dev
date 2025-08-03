@@ -325,3 +325,37 @@
     A fully automated system for generating SDKs from the UBill API. It builds, tests,
     and releases SDKs for multiple languages like PHP, Go, and JavaScript/TypeScript — with zero manual steps.
     This project powers open-source developer tooling for UBill, a Georgian billing and SMS platform.
+
+- title: Follytics
+  date: "2025-03-03"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/follytics"
+  includeInCV: true
+  tags:
+    - "GitHub Analytics"
+    - "Follower Tracker"
+    - "README Widget"
+  keywords:
+    - "GitHub Analytics"
+    - "GitHub Followers"
+    - "Follower Tracker"
+    - "README Widget"
+    - "Developer Tools"
+  content: |
+    A GitHub follower analytics service that tracks follows and unfollows using an event-sourcing-like pattern.
+    Gain historical insights into follower trends with precise, event-based tracking.
+
+    <!--more-->
+
+    Follytics is an open-source, full-stack application built with Go, Next.js, and PostgreSQL,
+    available at [follytics.app](https://follytics.app/). It helps you monitor your GitHub follower trends over time,
+    detect new followers and unfollows, and explore your profile’s growth patterns with historical accuracy.
+
+    ## Key features
+
+    - 📊 Event-based tracking of each follow/unfollow
+    - 📅 Historical trend analysis of your follower count
+    - 📈 Custom SVG widget you can embed in your GitHub README to make your profile stand out
+
+    Follytics is perfect for developers who want visibility into their GitHub audience and a way to showcase their
+    growth publicly.
