@@ -18,9 +18,6 @@
     {{ $coverURL := (printf "images/projects/%s/%s" (urls.URLize $item.title) $cover) }}
 
     {{ with resources.Get $coverURL }}
-      {{ with .Err }}
-        {{ errorf "Unable to get resource %s: %s" $coverURL . }}
-      {{ else }}
         {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
         {{ $params := dict "alt" $item.title }}
         {{ $resource := dict
@@ -29,7 +26,6 @@
           "path" (printf "%s/cover.%s" $item.title .MediaType.SubType)
         }}
         {{ $.AddResource $resource }}
-      {{ end }}
     {{ else }}
       {{ errorf "Unable to get resource %s" $coverURL }}
     {{ end }}
