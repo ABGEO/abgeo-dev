@@ -9,6 +9,9 @@ timeZone = 'Asia/Tbilisi'
 [markup.goldmark.renderer]
   unsafe = true
 
+[markup.highlight]
+  noClasses = false
+
 [params]
   centerTheme = true
   readMore = 'Read More'
