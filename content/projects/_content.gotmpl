@@ -1,4 +1,4 @@
-{{ range .Site.Data.projects }}
+{{ range hugo.Data.projects }}
   {{ $content := dict "mediaType" "text/markdown" "value" .content }}
   {{ $dates := dict "date" (time.AsTime .date) }}
   {{ $params := dict "url" .url "tags" .tags "keywords" .keywords "description" .description "hideComments" .hideComments }}

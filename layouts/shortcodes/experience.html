@@ -1,4 +1,4 @@
-{{ $data := .Site.Data.experience }}
+{{ $data := hugo.Data.experience }}
 
 {{ with .Get "destination" }}
 {{ if eq . "cv" }}

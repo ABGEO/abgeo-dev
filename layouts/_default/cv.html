@@ -124,16 +124,16 @@
 
 <body>
     <header>
-        <h1>{{ .Site.Data.profile.cv.name }}</h1>
+        <h1>{{ hugo.Data.profile.cv.name }}</h1>
         <div class="contact">
             <div class="contact-info">
-                <span>{{ .Site.Data.profile.cv.email }}</span>
-                <span class="dot-prefix">{{ .Site.Data.profile.cv.phone }}</span>
-                <span class="dot-prefix">{{ .Site.Data.profile.cv.address }}</span>
+                <span>{{ hugo.Data.profile.cv.email }}</span>
+                <span class="dot-prefix">{{ hugo.Data.profile.cv.phone }}</span>
+                <span class="dot-prefix">{{ hugo.Data.profile.cv.address }}</span>
             </div>
 
             <div class="links">
-                {{ range $idx, $link := (where .Site.Data.profile.social "includeInCV" true) }}
+                {{ range $idx, $link := (where hugo.Data.profile.social "includeInCV" true) }}
                 <span class="{{ if not (eq $idx 0) }}dot-prefix{{ end }}"><a href="{{ $link.url }}">{{ $link.label
                         }}</a></span>
                 {{ end }}

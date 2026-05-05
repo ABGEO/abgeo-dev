@@ -1,4 +1,4 @@
-languageCode = 'en-us'
+locale = 'en-us'
 title = "ABGEO's Personal website"
 copyright = 'Temuri Takalandze (ABGEO)'
 disableHugoGeneratorInject = true
