@@ -35,6 +35,7 @@
 {{ $css := resources.Match "css/*.css" }}
 {{ $bundle := sort $css "Name" | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $bundle.Permalink }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/style.min.css">
 
 {{ template "_internal/google_analytics.html" . }}
 

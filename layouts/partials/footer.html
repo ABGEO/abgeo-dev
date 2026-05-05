@@ -13,4 +13,6 @@
 
 {{ $bundle := $js | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
 
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"
+    integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
