@@ -40,6 +40,16 @@ showFullContent = false
 readingTime = true
 +++
 
+## Updates
+
+**2026-05-06.** I opened a coordination case with [CERT/CC's VINCE](https://kb.cert.org/vince) covering the findings below. CVE assignment will go through that process.
+
+**2026-05-07.** Naxclow contacted me one day after this post went live, acknowledged the report, and started their internal review process.
+
+{{< figure src="/blog/anyone-can-ring-your-doorbell/images/vendor-response.webp" alt="Email from Naxclow's technical director acknowledging the disclosure report" position="center" caption="Naxclow's reply, the day after publication." captionPosition="center" >}}
+
+---
+
 Recently I bought a smart doorbell off Temu, the Chinese marketplace that has been gaining popularity worldwide over the past couple of years. I wanted to know how secure the cheap connected hardware sold on that platform actually is. The unit ships under the name "Smart Doorbell X3" and pairs through a mobile app called "X Smart Home". Camera, microphone, two-way audio, sub-GHz indoor receiver. The kind of gear that has quietly shown up on a lot of front doors.
 
 By the end of a few weekends with one I could:
