@@ -359,3 +359,43 @@
 
     Follytics is perfect for developers who want visibility into their GitHub audience and a way to showcase their
     growth publicly.
+
+- title: Mezz
+  date: "2026-05-10"
+  cover: "cover.webp"
+  url: "https://github.com/ABGEO/mezz"
+  includeInCV: true
+  tags:
+    - "Docker"
+    - "Networking"
+    - "IoT"
+    - "Security"
+  keywords:
+    - "Docker"
+    - "Networking"
+    - "IoT"
+    - "WiFi"
+    - "Security"
+    - "dnsmasq"
+    - "hostapd"
+    - "mitmproxy"
+  content: |
+    A small wifi sandbox for inspecting your own IoT devices.
+
+    <!--more-->
+
+    Mezz turns a Linux host with two NICs into an isolated network that sits between your devices
+    and the rest of your home network. The name comes from [mezzanine](https://en.wikipedia.org/wiki/Mezzanine),
+    the half-floor between two main floors of a building. This network sits in the same place.
+
+    It runs as a `docker compose` stack. A wifi access point on its own subnet, DHCP and DNS for every
+    client, NAT out through the wired uplink, a local `.lan` domain, and per-query DNS logging so you
+    can see exactly what your fridge is talking to. There's also an optional mitmproxy profile if you
+    want to look at the actual HTTP and HTTPS traffic, not just the DNS.
+
+    I built it to make IoT pentesting less of a setup chore. Instead of wiring up a separate router,
+    flashing OpenWrt, and stitching together hostapd, dnsmasq, and iptables by hand every time, you
+    get the whole rig in two `curl` commands. Edit `.env`, bring it up, and the device is on your sandbox.
+
+    Mezz is defensive only. It is meant for inspecting devices you own, not for impersonating someone
+    else's network. Container images are published to Docker Hub under `abgeo/mezz-*`.

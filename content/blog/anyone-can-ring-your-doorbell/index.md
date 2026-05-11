@@ -104,7 +104,7 @@ The sub-GHz leg is replayable from the sidewalk with a Flipper Zero. I captured 
 
 ## Phase 1: Reading the Wire
 
-MITM in the lab, long Wireshark session, single capture from button press to call answer.
+[MITM](/projects/mezz/) in the lab, long Wireshark session, single capture from button press to call answer.
 
 The first thing on the wire is the alert. The doorbell hits the backend in plain HTTP, the backend pushes a notification to the owner's phone, and the call leg starts only after.
 
