@@ -32,6 +32,8 @@
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
+<link rel="me" href="{{ .Site.Params.social.mastodonUrl }}">
+
 {{ $css := resources.Match "css/*.css" }}
 {{ $bundle := sort $css "Name" | resources.Concat "css/bundle.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $bundle.Permalink }}">

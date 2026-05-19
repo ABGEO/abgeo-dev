@@ -28,6 +28,7 @@ timeZone = 'Asia/Tbilisi'
   
   [params.social]
     twitter = 'ABGEO07'
+    mastodonUrl = 'https://mastodon.social/@ABGEO'
 
   [params.tools]
     facebook_pixel_id = '920682743603564'
