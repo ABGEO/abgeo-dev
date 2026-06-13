@@ -48,6 +48,8 @@ readingTime = true
 
 {{< figure src="/blog/anyone-can-ring-your-doorbell/images/vendor-response.webp" alt="Email from Naxclow's technical director acknowledging the disclosure report" position="center" caption="Naxclow's reply, the day after publication." captionPosition="center" >}}
 
+**2026-06-11.** CISA published advisory [ICSA-26-162-02](https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02) for the Naxclow IoT Platform, assigning seven CVEs from the VINCE case. Naxclow did not respond to CISA.
+
 ---
 
 Recently I bought a smart doorbell off Temu, the Chinese marketplace that has been gaining popularity worldwide over the past couple of years. I wanted to know how secure the cheap connected hardware sold on that platform actually is. The unit ships under the name "Smart Doorbell X3" and pairs through a mobile app called "X Smart Home". Camera, microphone, two-way audio, sub-GHz indoor receiver. The kind of gear that has quietly shown up on a lot of front doors.
@@ -521,6 +523,7 @@ The chain has multiple independent links: the firmware, the onboarding endpoints
 - **2026-04-01** Started testing on my own devices in an isolated lab, part-time.
 - **2026-04-29** Disclosure report sent through the working email addresses (the contact-finding story is in the intro) and the X Smart Home in-app feedback form. No reply.
 - **2026-05-06** Publication, with sensitive specifics withheld, one week after the notification.
+- **2026-06-11** CISA published advisory [ICSA-26-162-02](https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02) with seven CVEs.
 
 Naxclow is operated by Guangzhou Qiangui IoT Technology Co., Ltd., so the disclosure is with the right organisation regardless of which brand the device shipped under.
 
