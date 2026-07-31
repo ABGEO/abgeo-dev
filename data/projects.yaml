@@ -399,3 +399,33 @@
 
     Mezz is defensive only. It is meant for inspecting devices you own, not for impersonating someone
     else's network. Container images are published to Docker Hub under `abgeo/mezz-*`.
+
+- title: Siesta
+  date: "2026-07-31"
+  cover: ""
+  url: "https://github.com/ABGEO/siesta"
+  includeInCV: false
+  tags:
+    - "macOS"
+    - "Swift"
+    - "SwiftUI"
+  keywords:
+    - "macOS"
+    - "Swift"
+    - "SwiftUI"
+    - "Menu Bar"
+    - "Slack"
+    - "Google Calendar"
+    - "OAuth"
+    - "PKCE"
+  content: |
+    A macOS menu bar app that pauses your Slack status and Google Calendar availability while you're away,
+    and restores them when you're back.
+
+    <!--more-->
+
+    Siesta lives in the menu bar. No dock icon, no windows to manage. One click, or a timer, sets a custom
+    Slack status and blocks out a busy event on Google Calendar. When you return, or when the away period ends,
+    your previous status comes back on its own.
+
+    Sign-in uses OAuth 2.0, and tokens are stored in the Keychain.
