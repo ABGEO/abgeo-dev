@@ -57,7 +57,8 @@ any application code runs. For PHP-FPM, the advisory has no complete exploit yet
 backports for [PHP 7.4](https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619),
 [PHP 8.0](https://github.com/php/php-src/tree/PHP-8.0-CVE-2026-109618-109619) and
 [PHP 8.1](https://github.com/php/php-src/tree/PHP-8.1-CVE-2026-109618-109619). They help if you build PHP from source.
-If you use packages, ask your distribution or LTS vendor. There is nothing for PHP 7.3 and older.
+If you use packages, ask your distribution or LTS vendor. There is nothing for PHP 7.3 and older. Note that these
+backports turn off session upload progress completely, so that feature stops working after you apply them.
 
 **If you cannot update today.** The advisory lists settings that reduce the risk. None of them makes a server safe.
 
@@ -170,12 +171,23 @@ server.
 
 1. Read the official release notes. Compare the affected versions with your inventory.
 2. Install the new PHP packages.
-3. Restart PHP-FPM or the web server.
+3. Restart PHP-FPM or the web server. Use a full restart, not a reload.
 4. Make sure that the web server runs the new version. Do not trust `php -v` alone. The CLI and PHP-FPM can be
    different binaries.
 
 Do not skip step 3. A new package on disk does nothing while the old worker processes still run. A server can show
 "patched" in the package manager and still serve requests with the old binary.
+
+Why a full restart? The patch also changes OPcache. Before the fix, a memory error at the wrong moment could leave bad
+data in the OPcache shared memory, which all workers use. A full restart throws that memory away. A reload or
+`opcache_reset()` may also do it, but I did not verify that, so I would not rely on it today.
+
+Also watch your logs after the update. The patch changes how PHP handles memory errors. In some cases a worker now exits
+instead of showing the usual "Allowed memory size exhausted" fatal error. On 8.5.12 this can happen when a request goes
+far over `memory_limit` (see the new `memory_hard_limit_percent` setting). With the backports for PHP 7.4 to 8.1, it
+can already happen at `memory_limit`. The message then goes to stderr, not to your PHP error log, and the web server or
+PHP-FPM logs that a child process exited. This does not mean that the update broke your server. It means that a request
+used too much memory.
 
 Sansec expects mass attacks within 15 minutes of the release. That sounds dramatic. For a bug in PHP core with a public
 diff, I think it is realistic.
