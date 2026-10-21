@@ -43,6 +43,14 @@ timing suggests a link. If your site is behind Cloudflare, check that the Manage
 traffic really goes through Cloudflare. Do not treat this as a fix. A WAF rule can miss a variant of the attack, and
 requests that reach your server directly skip it. You still need to update PHP.
 
+**Update (October 21):** Some organizations are taking websites offline until the fix is out. Finland's state IT
+centre Valtori
+[took public government websites offline](https://www.devdiscourse.com/article/international/3995774-finland-takes-public-government-websites-offline-as-precaution-over-php-concern)
+and says this is a precaution, not the result of an attack or a breach. In the Netherlands, the
+[NOS reports](https://nos.nl/liveblog/2636066-websites-kwetsbaar-voor-softwarelek-rtl-nieuws-digid-en-mijnoverheid-uit-de-lucht)
+that the parliament website, DigiD.nl, MijnOverheid.nl and several hospital sites are offline. If you cannot patch
+quickly, a few hours offline is a valid choice too (see step 8 below).
+
 ## What happened
 
 On October 20 at 15:20 UTC, a "Tell HN" post on Hacker News said that two PHP remote code execution (RCE) disclosures
