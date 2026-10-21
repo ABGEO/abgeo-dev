@@ -31,6 +31,11 @@ started early for everybody who runs PHP.
 
 This post shows what is public at 08:00 UTC on October 21. I will add an update when the release is out.
 
+**Update (October 21, 09:44 UTC):** The PHP Foundation
+[warns](https://x.com/ThePHPF/status/2112828424486056183) that the volunteer-run Remi repository
+(rpms.remirepo.net) will not have updates today. If you install PHP from Remi, switch to your distribution's packages or
+build from source, so you can apply the fix as soon as it is out.
+
 ## What happened
 
 On October 20 at 15:20 UTC, a "Tell HN" post on Hacker News said that two PHP remote code execution (RCE) disclosures
@@ -93,8 +98,10 @@ story.
 3. Record the PHP version and the SAPI (for example PHP-FPM or mod_php) for each host.
 4. Put internet-facing hosts first in your patch queue.
 5. If a hosting provider controls your PHP build, contact them now. Ask when they will apply the fix.
-6. For PHP 8.1 or older, start the upgrade to a supported branch.
-7. If you cannot upgrade an old host today, remove it from the public internet. A VPN or an IP allowlist is enough for
+6. If you install PHP from the Remi repository on RHEL, Rocky, AlmaLinux or Fedora, plan another source for today. The
+   PHP Foundation says that Remi will not have the update today. Use your distribution's packages or build from source.
+7. For PHP 8.1 or older, start the upgrade to a supported branch.
+8. If you cannot upgrade an old host today, remove it from the public internet. A VPN or an IP allowlist is enough for
    now.
 
 Sansec makes an important point for online stores on Magento and similar platforms. The bug is in PHP itself. The attack
