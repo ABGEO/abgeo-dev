@@ -29,7 +29,47 @@ PHP ships an emergency security release today, October 21, 2026, at 14:00 UTC. T
 PHP core. People already call them "php2shell". The details leaked one day before the embargo ended, so the clock
 started early for everybody who runs PHP.
 
-This post shows what is public at 08:00 UTC on October 21. I will add an update when the release is out.
+I wrote this post with what was public at 08:00 UTC on October 21. The fix is out now, so start with the next section.
+
+## Update: the fix is out
+
+PHP released 8.5.12, 8.4.27, 8.3.36 and 8.2.35 on October 21. Read the
+[security advisory](https://www.php.net/archive/2026.php#2026-10-21-5) and update now. The advisories list every
+version below these releases as affected. Both bugs work without authentication.
+
+**The bugs.**
+
+- CVE-2026-109618, "RCE via OOM corruption"
+  ([GHSA-w8hw-w9fx-j79w](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w)). An out-of-memory
+  error can stop PHP while request data is only partly initialized. Request cleanup then uses the broken data. The
+  trigger is a crafted multipart request.
+- CVE-2026-109619, "RCE via stale global state"
+  ([GHSA-6wmf-4rv5-p3rp](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp)). A fatal error can
+  leave a worker with pointers into memory of a finished request. The next request in the same worker can use them
+  before PHP resets them. Session upload progress, which is on by default, is one of the confirmed paths. So the
+  write-up that pointed at the upload progress handler was right, at least for this bug.
+
+**Who is at risk.** All PHP installations that serve web requests: PHP-FPM, mod_php, php-cgi, FrankenPHP and LiteSpeed.
+The risk is highest for mod_php. There is a working exploit where an unauthenticated request triggers the attack before
+any application code runs. For PHP-FPM, the advisory has no complete exploit yet. Do not take that as a reason to wait.
+
+**Old versions.** PHP 8.1 and older still get no official release. The PHP security team published minimal source
+backports for [PHP 7.4](https://github.com/php/php-src/tree/PHP-7.4-CVE-2026-109618-109619),
+[PHP 8.0](https://github.com/php/php-src/tree/PHP-8.0-CVE-2026-109618-109619) and
+[PHP 8.1](https://github.com/php/php-src/tree/PHP-8.1-CVE-2026-109618-109619). They help if you build PHP from source.
+If you use packages, ask your distribution or LTS vendor. There is nothing for PHP 7.3 and older.
+
+**If you cannot update today.** The advisory lists settings that reduce the risk. None of them makes a server safe.
+
+- Set `session.upload_progress.enabled=0` in `php.ini` or in the FPM pool configuration, then restart every worker.
+  `ini_set()` and `.user.ini` do not help here. If you do not use this feature, keep it off after the update too.
+- On PHP 8.5, set `fatal_error_backtraces=0` and restart every worker.
+- Set a low `post_max_size`: 8M if the application takes no file uploads, 32M if it does. Also limit request size at
+  the web server or proxy.
+- Do not use `RLIMIT_AS` or `RLIMIT_DATA` to limit memory. They can trigger the OOM bug.
+
+The advisory also mentions `memory_limit=-1` for the OOM bug. Read its notes before you use it, because it removes a
+limit that many servers rely on.
 
 **Update (October 21):** The PHP Foundation
 [warns](https://x.com/ThePHPF/status/2112828424486056183) that the volunteer-run Remi repository
@@ -79,6 +119,8 @@ from PHP. The leaked post said CVSS 10.0. That number is not correct. The offici
 
 ## What is not confirmed
 
+I wrote this section before the release. The update at the top answers most of these points.
+
 **Root cause.** Nobody has published it. One third-party write-up points at the session upload progress handler. No
 vendor confirms this, so I do not recommend that you build your plan on it.
 
@@ -94,7 +136,8 @@ They are not official until php.net publishes them.
 ## Who gets a fix
 
 PHP supports only the 8.2 branch and later. Security support for 8.2 stops on December 31, 2026. If your
-server runs PHP 8.1 or older, you will not get an official fix.
+server runs PHP 8.1 or older, you will not get an official fix. Since the release, there are source backports for
+PHP 7.4, 8.0 and 8.1 (see the update at the top).
 
 This is the part that worries me. [Mallory](https://mallory.ai/blog/php-rce-rapid-response) counted internet-facing
 hosts on Shodan on October 20. About 1.5 million hosts show a PHP version. Of these, 883,717 (59%) run PHP 8.1 or older.
