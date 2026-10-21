@@ -31,10 +31,17 @@ started early for everybody who runs PHP.
 
 This post shows what is public at 08:00 UTC on October 21. I will add an update when the release is out.
 
-**Update (October 21, 09:44 UTC):** The PHP Foundation
+**Update (October 21):** The PHP Foundation
 [warns](https://x.com/ThePHPF/status/2112828424486056183) that the volunteer-run Remi repository
 (rpms.remirepo.net) will not have updates today. If you install PHP from Remi, switch to your distribution's packages or
 build from source, so you can apply the fix as soon as it is out.
+
+**Update (October 21):** Cloudflare published an
+[emergency WAF release](https://developers.cloudflare.com/changelog/post/2026-10-21-emergency-waf-release-cfmr/)
+with four new "Anomalous Execution" rules in its Managed Ruleset. The changelog does not name these CVEs, but the
+timing suggests a link. If your site is behind Cloudflare, check that the Managed Ruleset is enabled and that your
+traffic really goes through Cloudflare. Do not treat this as a fix. A WAF rule can miss a variant of the attack, and
+requests that reach your server directly skip it. You still need to update PHP.
 
 ## What happened
 
