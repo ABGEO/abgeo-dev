@@ -429,3 +429,53 @@
     your previous status comes back on its own.
 
     Sign-in uses OAuth 2.0, and tokens are stored in the Keychain.
+
+- title: Georgia MCP
+  date: "2026-10-22"
+  cover: "cover.png"
+  url: "https://github.com/ABGEO/georgia-mcp"
+  includeInCV: true
+  tags:
+    - "Go"
+    - "MCP"
+    - "AI"
+    - "Open Data"
+  keywords:
+    - "Go"
+    - "MCP"
+    - "Model Context Protocol"
+    - "MCP Server"
+    - "Claude"
+    - "ChatGPT"
+    - "Georgia"
+    - "Open Data"
+    - "Exchange Rates"
+    - "Fuel Prices"
+  content: |
+    An MCP server for Georgian public data. Ask Claude, ChatGPT, or any MCP client in your own words.
+
+    <!--more-->
+
+    Georgian public data is spread over many sites: the National Bank, each commercial bank, each fuel
+    company, the Tbilisi Transport Company. Georgia MCP reads them for your model, so you can ask one
+    question and get one answer.
+
+    It covers exchange rates from the National Bank and 14 commercial banks and exchange offices, fuel
+    prices, bank card offers, live Tbilisi public transport and trip planning, postal codes, Cavea cinema
+    sessions, Geostat statistics and inflation, air quality, legal acts, public holidays, land parcels,
+    Tbilisi building permits, Parliament bills and votes, and the electricity grid. That is 43 tools
+    across 14 subjects.
+
+    ## Key features
+
+    - **Read-only.** Every tool reads public data and changes nothing.
+    - **Sourced.** Every answer names its source and the time of the data.
+    - **Exact.** A rate or a price is a decimal string, never a rounded float.
+    - **No account.** The hosted server at `https://geo-mcp.abgeo.cloud/mcp` needs no sign-in and no key.
+
+    Georgia MCP is listed in the [Claude directory](https://claude.ai/directory/georgia-mcp), the ChatGPT plugin
+    directory, the [GitHub MCP Registry](https://github.com/mcp/ABGEO/georgia-mcp), and the
+    [Cursor Directory](https://cursor.directory/plugins/georgia-mcp). It is written in Go, follows spec driven
+    development, and ships signed release binaries and container images with SBOMs and build provenance.
+
+    Try it at [geo-mcp.abgeo.cloud](https://geo-mcp.abgeo.cloud). It is free software under the GPL v3.
